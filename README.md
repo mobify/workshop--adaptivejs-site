@@ -55,19 +55,13 @@ Ensure that you change the path to reflect your project folder structure.
 
     This steps enables your project JavaScript files to be checked against our [code style guide](https://github.com/mobify/mobify-code-style) every time you preview your build. The style errors in your project are reported in the terminal but do not prevent your site preview.
 
-9. Enter `n` not to use PRE.
-
-    ![PRE](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/zW1rEVD0zVEHLMi/Screen%20Shot%202015-01-22%20at%204.20.17%20PM.png)
-
-    PRE is one of our tools for website performance optimization. We do not include it in new projects by default.
-
-10. Enter `Zepto`.
+9. Enter `Zepto`.
 
     ![jQuery or Zepto](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/eytQdVG1wlvW7Ro/Screen%20Shot%202015-01-22%20at%204.20.50%20PM.png)
 
     We currently use Zepto by default. Zepto provides some of the same functionality that jQuery does but with a smaller file size. Read the [official Zepto documentation](http://zeptojs.com/) for information.
 
-11. Enter the most recent version of Zepto.
+10. Enter the most recent version of Zepto.
 
     ![Zepto Version](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/pgGyeLJEcpGlkbC/Screen%20Shot%202015-01-22%20at%204.21.34%20PM.png)
 
@@ -80,14 +74,14 @@ Ensure that you change the path to reflect your project folder structure.
     
     At the end of this tutorial, you change this directory structure to avoid confusion.
 
-12. Change directories into the new `workshop--adaptivejs-site` folder with the command:
+11. Change directories into the new `workshop--adaptivejs-site` folder with the command:
 
 
     ```
     cd workshop--adaptivejs-site
     ```
     
-13. View the contents of the folder with the command:
+12. View the contents of the folder with the command:
 
     ```
     ls -l
@@ -119,11 +113,7 @@ Ensure that you change the path to reflect your project folder structure.
 
     The **package.json** file defines your project information such as its name, project slug, and dependencies.
 
-13. Test your installation with a preview. Follow the instructions in Section 3, Preview the Adaptive.js Site, of our [Getting Started Existing Project](https://cloud.mobify.com/docs/adaptivejs/getting-started/existing-project/#preview-adaptivejs-site) guide.
-
-14. Stop the preview with the command keyboard shortcut `[control] c` on the command line.
-
-15. Change directories back to the first level `workshop--adaptivejs-site`
+13. Change directories back to the first level `workshop--adaptivejs-site`
 
         cd ../
 
