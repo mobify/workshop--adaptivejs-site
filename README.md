@@ -49,7 +49,7 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
     ![Router Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/O2VKpjbisSE3clo/Screen%20Shot%202015-03-12%20at%204.06.32%20PM.png)
 
 9. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
-10. Work through the third section, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server) of the Getting Started (New Project) guide.
+10. Work through the third section, [Preview the Adaptive.js Site](http://docs.mobify.com/v1.0/docs/preview-your-project) of the Getting Started (New Project) guide.
     Use the `http://www.merlinspotions.com/potions` URL for the site.
 
     A page that is similar to the Merlin's Potions homepage appears but with content from the category page included under the header.
