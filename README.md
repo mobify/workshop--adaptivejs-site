@@ -19,7 +19,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
     grunt preview
     ```
 
-2. In your browser, [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server).
+2. In your browser, [Preview the Adaptive.js Site](http://docs.mobify.com/v1.0/docs/preview-your-project).
 
     Use `http://www.merlinspotions.com/potions` as the site URL.
 
@@ -27,7 +27,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 3. Launch an editor app. In the `adaptation/views` folder, open the `category.js` category view file.
 
-    As you remember from the [Overview of the Mobify Bundle](https://cloud.mobify.com/docs/adaptivejs/overview/mobify-bundle/#views) guide, the view file is where you select and transform content from the original page.
+    As you remember from the [Overview of the Mobify Bundle](http://docs.mobify.com/v1.0/docs/the-mobify-bundle/#views) guide, the view file is where you select and transform content from the original page.
 
 4. In the `context` section of the file, remove the `body` key.
 5. In `context` object of the view file, add the `title` key with the following code snippet:
@@ -60,7 +60,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 8. In the editor, from the `adaptation/templates` folder, and open the `category.dust` template file.
 
-    As you remember from the [Overview of the Mobify Bundle](https://cloud.mobify.com/docs/adaptivejs/overview/mobify-bundle/#templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel name structure.
+    As you remember from the [Overview of the Mobify Bundle](http://www.merlinspotions.com/potions/), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel name structure.
 
 9. In the `category.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`. 
 
@@ -70,7 +70,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Hehqa43UYdVBQxW/Screen%20Shot%202015-02-05%20at%201.41.56%20PM.png)
 
-    When you override the `contentBlock` key, you can add your own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
+    When you override the `contentBlock` key, you can add your own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](http://docs.mobify.com/v1.0/docs/dustjs-cheat-sheet/#h-block-overrides-override-).
 
 10. In the `contentBlock` key, add the two `title` and `listing` keys that you defined in the corresponding view file:
 
@@ -87,7 +87,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     ![Category Dust Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/nF4HlNrhtHjDZh3/Screen%20Shot%202015-03-12%20at%204.34.21%20PM.png)
 
-12. [Preview the Adaptive.js Site](https://cloud.mobify.com/docs/adaptivejs/getting-started/new-project/#/start-adaptivejs-server), with the URL `http://www.merlinspotions/potions` for the category product listing page.
+12. [Preview the Adaptive.js Site](http://docs.mobify.com/v1.0/docs/preview-your-project), with the URL `http://www.merlinspotions/potions` for the category product listing page.
 
     A page similar to the one in the previous step appears but now only with the title and listing as contents.
 
