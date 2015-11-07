@@ -1,7 +1,7 @@
 
 module.exports = {
     'setUp': function(browser) {
-        browser.preview()
+        browser.preview();
     },
 
     'Index test': function(browser) {
@@ -11,4 +11,4 @@ module.exports = {
             .verify.elementPresent('#x-root')
             .end();
     }
-}
+};

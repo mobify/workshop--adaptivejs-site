@@ -1,15 +1,15 @@
 #Step 1: Generate a View
 
-In addition to generating a new project, the Adaptive.js Generator has a sub-generator that sets up a new view for your project. The sub-generator creates:
+In addition to generating a new project, the Adaptive.js Generator has a view generator that sets up a new view for your project. The view generator creates:
 * a view file,
-* the dust template,
+* a Dust template,
 * a view-script file, and
 * a view test file.
 
 
 ##Task
 
-###Create a New 'category' View 
+###Create a New 'category' View
 
 1. In your `workshop--adaptivejs-site` project folder, enter the following command to run the sub-generator with Yeoman:
 
@@ -18,19 +18,19 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
     ```
 
 2. When the generator prompts you for a name, enter `category`.
-3. Select `base` as the view to extend.
+3. Select `baseView` as the view to extend.
 
-    ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/VXQhsUYEz8Jjnqj/Screen%20Shot%202015-01-15%20at%205.05.49%20PM.png)
+    ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/CCZL4KBrKEO5dLW/Screen%20Shot%202015-11-06%20at%204.26.35%20PM.png)
 
-4. To add the view to the router file, navigate to your project folder in Finder. Locate the `adaptation` folder. Open the file `router.js` with an editor app.
-5. In the `router.js` file, in the `define` dependencies array code block, add the new `views/category` path for the new view file. Remember to append a comma the previous `views/home` last entry. 
+4. To add the view to the router file, open the file `app/global/router.js` with a text editor.
+5. In `router.js` file, in the `define` dependencies array code block, add the new `pages/views/category` path for the new view file. Remember to append a comma the previous `page/views/home` last entry.
 
-    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
-    
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/2HJ07yXf0QrxKin/Screen%20Shot%202015-11-06%20at%204.45.14%20PM.png)
+
 6. In the function definition, list the view `Category` as an argument after the `Home` argument. Remember to append the comma after `Home`.
 
 
-    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/6ShtDgoKJvxKuCq/Screen%20Shot%202015-02-05%20at%201.15.29%20PM.png)
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/Ha1UMYmQUZEcjMH/Screen%20Shot%202015-11-06%20at%204.33.13%20PM.png)
 
 7. Remove the default calls to `router.add()` and replace them with the following lines of code:
 
@@ -43,12 +43,12 @@ In addition to generating a new project, the Adaptive.js Generator has a sub-gen
     The `.add()` function creates a new route that loads the given view upon the return of a Boolean value from the function. The `Router.selectorMatch()` function returns true when an element that matches the selector exists on the current page.
 
 8. Save the `router.js` file with these changes in your editor.
-    
+
     Your `router.js` file should look like this:
 
-    ![Router Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/O2VKpjbisSE3clo/Screen%20Shot%202015-03-12%20at%204.06.32%20PM.png)
+    ![Router Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/ujvAAPk9Cp4dn65/Screen%20Shot%202015-11-06%20at%204.43.53%20PM.png)
 
-9. Back in the Terminal, enter the `grunt preview` command to start the browser preview.
+9. Back in the command line, enter the `grunt preview` command to start the browser preview.
 10. Work through the [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project) tutorial.
     Use the `http://www.merlinspotions.com/potions` URL for the site.
 

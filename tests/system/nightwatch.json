@@ -1,6 +1,6 @@
 {
     "src_folders": ["./tests/system"],
-    "output_folder": "./reports",
+    "output_folder": "${CIRCLE_TEST_REPORTS}/nightwatch",
     "custom_commands_path": "./node_modules/nightwatch-commands/commands",
     "custom_assertions_path": "./node_modules/nightwatch-commands/assertions",
 
@@ -42,6 +42,76 @@
                 "javascriptEnabled": true,
                 "acceptSslCerts": true
             }
+        },
+        "sauce-android" : {
+            "selenium" : {
+                "start_process" : false
+            },
+            "selenium_host" : "ondemand.saucelabs.com",
+            "selenium_port" : 80,
+            "username" : "${SAUCE_USERNAME}",
+            "access_key" : "${SAUCE_ACCESS_KEY}",
+            "use_ssl" : false,
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "platformName": "ANDROID",
+                "platformVersion": "4.4",
+                "deviceName": "",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "sauce-ios" : {
+            "selenium" : {
+                "start_process" : false
+            },
+            "selenium_host" : "ondemand.saucelabs.com",
+            "selenium_port" : 80,
+            "username" : "${SAUCE_USERNAME}",
+            "access_key" : "${SAUCE_ACCESS_KEY}",
+            "use_ssl" : false,
+            "desiredCapabilities": {
+                "browserName": "Safari",
+                "platformName": "iOS",
+                "platformVersion": "8.2",
+                "deviceName": "iPhone Simulator",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "android" : {
+            "launch_url" : "http://localhost:4723/wd/hub",
+            "selenium_port"  : 4723,
+            "selenium_host"  : "localhost",
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "platformName": "ANDROID",
+                "deviceName": "",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "ios" : {
+            "launch_url" : "http://localhost:4723/wd/hub",
+            "selenium_port"  : 4723,
+            "selenium_host"  : "localhost",
+            "desiredCapabilities": {
+                "browserName": "Safari",
+                "platformName": "iOS",
+                "platformVersion": "8.1",
+                "deviceName": "",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "components": {
+            "filter": "**/components/*"
+        },
+        "pages": {
+            "filter": "**/pages/*"
+        },
+        "workflows": {
+            "filter": "**/workflows/*"
         }
     }
 }
