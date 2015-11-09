@@ -23,14 +23,14 @@ In addition to generating a new project, the Adaptive.js Generator has a view ge
     ![View Generator](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/CCZL4KBrKEO5dLW/Screen%20Shot%202015-11-06%20at%204.26.35%20PM.png)
 
 4. To add the view to the router file, open the file `app/global/router.js` with a text editor.
-5. In `router.js` file, in the `define` dependencies array code block, add the new `pages/views/category` path for the new view file. Remember to append a comma the previous `page/views/home` last entry.
+5. In `router.js` file, in the `define` dependencies array code block, add the new `pages/category/view` path for the new view file. Remember to append a comma the previous `page/home/view` last entry.
 
-    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/2HJ07yXf0QrxKin/Screen%20Shot%202015-11-06%20at%204.45.14%20PM.png)
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/yWlAVHLsPVC4K6C/Screen%20Shot%202015-11-09%20at%2011.30.26%20AM.png)
 
 6. In the function definition, list the view `Category` as an argument after the `Home` argument. Remember to append the comma after `Home`.
 
 
-    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/Ha1UMYmQUZEcjMH/Screen%20Shot%202015-11-06%20at%204.33.13%20PM.png)
+    ![Add View to Router](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/klDKXEbx3oPDfo3/Screen%20Shot%202015-11-09%20at%2011.30.36%20AM.png)
 
 7. Remove the default calls to `router.add()` and replace them with the following lines of code:
 
