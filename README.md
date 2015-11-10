@@ -8,9 +8,9 @@ Now that the new view works, let's add content to it. Currently the contents of 
 
 There are two main elements to pull into our view:
 
-* the page title, and 
+* the page title, and
 * the list of products.
- 
+
 Start with the HTML definition for the page in the template file. Then in the view file, select the elements on the desktop site to add to the template.
 
 1. In Terminal, ensure you are in your `workshop--adaptivejs-site` directory. There, enter the following command to start the preview:
@@ -25,7 +25,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     As you change the category template and view files, refresh the preview page in the browser to see the changes.
 
-3. Launch an editor app. In the `adaptation/views` folder, open the `category.js` category view file.
+3. Launch an editor app. In the `app/pages/category` folder, open the `view.js` category view file.
 
     As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v1.0/docs/the-mobify-bundle#c-views) guide, the view file is where you select and transform content from the original page.
 
@@ -52,23 +52,23 @@ Start with the HTML definition for the page in the template file. Then in the vi
     ```
  Ensure that replace the entire code snippet with the one above, including the `,` comma character after the `title` block.
 
-7. Save and close the `category.js` view file in your editor.
+7. Save and close the `view.js` view file in your editor.
 
-    Your `category.js` file should look like this:
+    Your `view.js` file should look like this:
 
-    ![Category View Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/55p5oVUIFiTduTJ/Screen%20Shot%202015-03-12%20at%204.31.59%20PM.png)
+    ![Category View Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/8kDkfMbxkImjShf/Screen%20Shot%202015-11-09%20at%2011.28.48%20AM.png)
 
-8. In the editor, from the `adaptation/templates` folder, and open the `category.dust` template file.
+8. In the editor, from the `app/pages/category` folder, and open the `template.dust` template file.
 
-    As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v1.0/docs/the-mobify-bundle#d-templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view. This is why the `category.js` and `category.dust` files have parallel name structure.
+    As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v1.0/docs/the-mobify-bundle#d-templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view.
 
-9. In the `category.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`. 
+9. In the `template.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`.
 
-    ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/XQKwUSv5WGo064c/Screen%20Shot%202015-01-16%20at%2012.15.59%20PM.png)
+    ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/6BYtC9nwzY6oa3R/Screen%20Shot%202015-11-09%20at%204.42.39%20PM.png)
 
     As you remember from the Step 1 branch, the new view extends the base view. This means that the category template uses all of the mark up from the base dust file. By default, the base simply displays the full contents of the desktop HTML.
 
-    ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/Hehqa43UYdVBQxW/Screen%20Shot%202015-02-05%20at%201.41.56%20PM.png)
+    ![Base template contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/wVutPergCxmoqc6/Screen%20Shot%202015-11-09%20at%204.48.16%20PM.png)
 
     When you override the `contentBlock` key, you can add your own markup that is specific to this new page. For more information, view our documentation on [view inheritance](https://cloud.mobify.com/docs/adaptivejs/adapting/views/#/view-inheritance/) and [block overrides](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/#/block-overrides/).
 
@@ -85,7 +85,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     Your `category.dust` file should look like this:
 
-    ![Category Dust Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/nF4HlNrhtHjDZh3/Screen%20Shot%202015-03-12%20at%204.34.21%20PM.png)
+    ![Category Dust Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/SYM32MCq1YTIPIf/Screen%20Shot%202015-11-09%20at%204.48.41%20PM.png)
 
 12. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
     * use the `http://www.merlinspotions/potions` URL for the category product listing page.
