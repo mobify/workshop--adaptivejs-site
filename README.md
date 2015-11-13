@@ -17,12 +17,12 @@ There are a few different ways to affect HTML that the template outputs. The fir
 
     Refresh the page in your browser as you update the template HTML and SCSS to view the changes.
 
-3. In an editor app, in the `adaptation/templates` folder, open the `category.dust` dust template file.
+3. In a text editor, in the `app/pages/category` folder, open the `template.dust` template file.
 4. Wrap the `{title}` key in a `div` element with the `t-category__title` class.
 
-    ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/AoTbBtkdqrBznRL/Screen%20Shot%202015-01-16%20at%201.25.40%20PM.png)
+    ![Wrap title in a div](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/jOMVSXUX3wORdPG/Screen%20Shot%202015-11-09%20at%205.07.06%20PM.png)
 
-5. Save the `category.dust` file and close it.
+5. Save the `template.dust` file and close it.
 
 Inspect the class name to understand how it follows our [class naming convention](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-naming-conventions). The `t-` prefix indicates that the class is part of a template ([learn more on css class prefix conventions](https://github.com/mobify/mobify-code-style/tree/master/css/class-naming-conventions#class-prefix-conventions)).
 The next part indicates the name of the template, which is `category`.
@@ -30,15 +30,15 @@ Finally the  `__title` part indicates a title subcomponent of the `category` tem
 
 Another way to change the output HTML is to modify the elements that the view returns.
 
-1. In your editor app, in the `adaptation/views` folder, open the `category.js` category view file.
+1. In your editor app, in the `app/pages/category` folder, open the `view.js` category view file.
 2. Add a `postProcess` function to the view. Ensure that this `postProcess` first calls the `postProcess` function in the base view file.
 
     ```javascript
     {
         template: template,
-        extend: Base, 
+        extend: BaseView,
         postProcess: function(context) {
-            context = Base.postProcess(context);
+            context = BaseView.postProcess(context);
 
             return context;
         },
@@ -48,17 +48,17 @@ Another way to change the output HTML is to modify the elements that the view re
 
     The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](http://docs.mobify.com/v1.0/docs/views/#c-view-postprocess) guide.
 
-3. Inside the `postProcess` function, at the top of the function, store the `context.listing` Zepto object in a `context` variable.
+3. Inside the `postProcess` function, at the top of the function, store the `context.listing` object in a `context` variable.
 
     ```javascript
-    context = Base.postProcess(context);
+    context = BaseView.postProcess(context);
     ```
 
 4. Store the listing in a new `$listing` variable. Add the class `c-product-list` to the listing element. The `c-product-list` class name indicates that it is a self-contained component. As you apply the `c-product-list` class name to the listing element, the listing element acts as the container for the component.
 
     ```javascript
     var $listing = context.listing;
-    
+
     $listing.addClass('c-product-list');
     ```
 
@@ -75,18 +75,18 @@ Another way to change the output HTML is to modify the elements that the view re
     ```
 
     The `c-` prefix indicates that the element is a component. In our case, we deal with two components: `c-product-list` (which has a sub-component item), and `c-price`.
-    
-7. Save the `category.js` file and close it.
+
+7. Save the `view.js` file and close it.
 
 Your newly modified view file looks like this:
 
-![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/jA3OWysySFbjwTM/Screen%20Shot%202015-03-27%20at%2011.45.02%20AM.png)
+![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/W1qZKUrs09DL9rb/Screen%20Shot%202015-11-12%20at%201.41.52%20PM.png)
 
 ##Task B
 
 ### Add SCSS Files for the Template and Components
 
-1. In an editor app, create a new file in the `assets/styles/templates` directory. As a best practice, name the file `_category.scss` in a way that follows the [Mobify file name convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
+1. In an editor app, create a new file in the `app/pages/category` directory. As a best practice, name the file `_style.scss` in a way that follows the [Mobify file name convention](https://github.com/mobify/mobify-code-style/tree/master/css/sass-best-practices#filename-naming-convention).
 2. Add the following styles for the `t-category__title` element:
 
     ```scss
@@ -105,23 +105,23 @@ Your newly modified view file looks like this:
     }
     ```
 
-    Save the `_category.scss` SCSS file and close it.
+    Save the `_style.scss` SCSS file and close it.
 
-3. In the editor app, from the `/assets/styles` folder, open the `_templates.scss` file. This is where all of the template SCSS files are imported into.
-4. Add the `_category.scss` file to the list of template SCSS partials.
+3. In the editor app, from the `app/global/styles` folder, open the `_pages.scss` file. This is where all of the template SCSS files are imported into.
+4. Add the `app/pages/category/_style.scss` file to the list of template SCSS partials.
 
     ```scss
     // Page Templates
     // --------------
 
-    @import "templates/home";
-    @import "templates/category";
+    @import "pages/home/style";
+    @import "pages/category/style";
     ```
 
-    Save the `_templates.scss` file and close it.
+    Save the `_pages.scss` file and close it.
 
-5. In the editor app, in the `assets/styles/components` folder, create a new `_product-list.scss` SCSS file for the `product-list` component.
-6. Add the following styles to the `_product-list.scss` product list SCSS file.
+5. In the editor app, in the `app/components` folder, create a new folder `product-list`. In that folder, create a new `_style.scss` SCSS file for the `product-list` component.
+6. Add the following styles to the `_style.scss` product list SCSS file.
 
     ```scss
     // Product List
@@ -154,7 +154,7 @@ Your newly modified view file looks like this:
     ```
     Save the `_product-list.scss` product list file and close it.
 
-7. In your editor app, from the `/assets/styes` folder, open the `_components.scss` component SCSS file. This is where all of the component SCSS files are imported into.
+7. In your editor app, from the `app/global/styles` folder, open the `_components.scss` component SCSS file. This is where all of the component SCSS files are imported into.
 8. Add the `_product-list` SCSS file to the list of components.
 
     ```scss
@@ -165,12 +165,12 @@ Your newly modified view file looks like this:
     //
     // eg. @import 'components/button';
 
-    @import 'components/card';
-    @import 'components/product-list';
+    @import 'components/card/style';
+    @import 'components/product-list'/style;
     ```
     Save the `_components.scss` component list file and close it.
 
-9. Repeat Steps 5-8 in Task B. In `assets/styles/components` folder, add a `_price.scss` component file with the following styles:
+9. Repeat Steps 5-8 in Task B. In `app/components/price` folder, add a `_price.scss` component file with the following styles:
 
     ```scss
     // Price
@@ -182,7 +182,7 @@ Your newly modified view file looks like this:
         font-weight: bold;
     }
     ```
-**Remember** to add the `_price` file to the list of compontent to the component list in `/assets/styles/_components.scss`. Save both your files in the editor when you are done.
+**Remember** to add the `_price` file to the list of compontent to the component list in `app/global/styles/_components.scss`. Save both your files in the editor when you are done.
 
 10. In your browser, view the potions category page. Refresh the page from Step 2 in Task A in this README.
 
