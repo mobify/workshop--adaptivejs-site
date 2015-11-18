@@ -1,9 +1,14 @@
 {
-    "activeProfile": "default",
+    "activeProfile": "preview",
     "profiles": {
-        "default": {
+        "preview": {
             "bundleUrl": "http://localhost:8080/adaptive.js",
-            "siteUrl": "www.merlinspotions.com"
+            "siteUrl": "merlinspotions.com"
+        },
+        "production": {
+            "bundleUrl": "",
+            "siteUrl": "merlinspotions.com",
+            "production": true
         }
     }
 }

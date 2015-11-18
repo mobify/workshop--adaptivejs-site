@@ -1,7 +1,7 @@
 
 module.exports = {
     'setUp': function(browser) {
-        browser.preview()
+        browser.preview();
     },
 
     'Checkout test': function(browser) {
@@ -10,4 +10,4 @@ module.exports = {
             .verify.elementPresent('#x-root')
             .end();
     }
-}
+};
