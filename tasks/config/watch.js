@@ -1,8 +1,11 @@
 module.exports = function(grunt) {
     return {
         css: {
-            files: '**/*.scss',
-            tasks: ['vellum_build_dev']
+            files: [
+                'app/**/*.scss',
+                '!app/bower_components/**'
+            ],
+            tasks: ['adaptive-compile-css']
         }
     };
 };

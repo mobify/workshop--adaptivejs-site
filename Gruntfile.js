@@ -36,11 +36,12 @@ module.exports = function(grunt) {
 
     grunt.initConfig(config);
 
-    grunt.registerTask('build_dev', ['clean','lint:dev','vellum_build_dev','adaptive-build_dev']);
-    grunt.registerTask('build_prod', ['clean','lint:prod','vellum_build_prod','adaptive-build_prod']);
-    grunt.registerTask('preview', ['build_dev','adaptive-preview']);
-    grunt.registerTask('push', ['clean','lint:prod','vellum_build_prod','adaptive-push']); 
-    grunt.registerTask('test', ['build_dev', 'adaptive-test']);
-    grunt.registerTask('test_skip_build', ['adaptive-test']);
-    grunt.registerTask('test_browser', ['build_dev', 'adaptive-test_browser']);
+    grunt.registerTask('build_dev', 'Builds the project with development settings', ['adaptive-clean_build','lint:dev','adaptive-compile-css__dev','adaptive-build_dev']);
+    grunt.registerTask('build_prod', 'Builds the project with production settings', ['adaptive-clean_build','lint:prod','adaptive-compile-css__prod','adaptive-build_prod']);
+    grunt.registerTask('preview', 'Builds the project with development settings and starts a server using HTTP port 8080 / HTTPS port 8443. Options: [--port <http_port>] [--https-port <https_port>]', ['build_dev','adaptive-preview']);
+    grunt.registerTask('push', 'Builds the project with production settings and uploads a bundle to Mobify Cloud. Options: [-m | --message "<your_bundle_message>"]', ['adaptive-clean_build','lint:prod','adaptive-compile-css__prod','adaptive-push']);
+    grunt.registerTask('test', 'Builds the project with development settings and runs automated tests specified in tests/runner/testRunner.js', ['build_dev', 'adaptive-test']);
+    grunt.registerTask('test_ci', 'Task for running tests in continuous integration environments, like CircleCI', ['build_dev', 'adaptive-test_ci']);
+    grunt.registerTask('test_skip_build', 'Runs automated tests specified in tests/runner/testRunner.js without building the project', ['adaptive-test']);
+    grunt.registerTask('test_browser', 'Builds your project with test settings and and starts a server. Run your tests in the browser by visiting http://localhost:8888/tests', ['build_dev', 'adaptive-test_browser']);
 };
