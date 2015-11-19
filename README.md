@@ -11,8 +11,8 @@ Now that there is content in the header, we add style to it.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
     * Use `http://www.merlinspotions.com/potions` as the site URL.
-    
-3. In an editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header SCSS file.
+
+3. In an editor app, from the `app/global/includes/header` directory, open the `_style.scss` header SCSS file.
 
     This file was created by the Adaptive.js project generator with some default styles. We now replace these with styles for our site header.
 
@@ -25,7 +25,6 @@ Now that there is content in the header, we add style to it.
     .t-header {
         display: flex;
         justify-content: space-between;
-        padding: $v-space $small-h-space;
     }
 
 
@@ -48,12 +47,12 @@ Now that there is content in the header, we add style to it.
         }
     }
     ```
-    
-    Save the `_header.scss` header SCSS file and close it.
+
+    Save the `_style.scss` header SCSS file and close it.
 
     We have the header layout set up. Let's add to menu and the cart buttons to fill in this layout.
 
-5. In your editor app, in the `/assets/styles/components` folder, create a new `_button.scss` SCSS file.
+5. In your editor app, in the `app/components` folder, create a new `button` directory, then `_style.scss` SCSS file within i.
 
 6. Add the following content to the file:
 
@@ -78,9 +77,9 @@ Now that there is content in the header, we add style to it.
     }
     ```
 
-    Save the `_button.scss` SCSS file and close it.
+    Save the `_style.scss` SCSS file and close it.
 
-7. In your editor app, from the `/assets/styles` directory, open the `_components.scss` file.
+7. In your editor app, from the `app/global/styles` directory, open the `_components.scss` file.
 
 8. Add the `_button.scss` file to the list of components with the `@import` statement at the bottom of this code snippet:
 
@@ -92,16 +91,16 @@ Now that there is content in the header, we add style to it.
     //
     // eg. @import 'components/button';
 
-    @import 'components/card';
-    @import 'components/product-list';
-    @import 'components/price';
-    @import 'components/button';
+    @import 'components/card/style';
+    @import 'components/product-list/style';
+    @import 'components/price/style';
+    @import 'components/button/style';
     ```
-    
+
     Save the `_components.scss` file and close it.
 
     Now that we have common button styles, let's adjust our header menu button.
-9. In your editor app, from the `/assets/styles/templates/partials` directory, open the `_header.scss` header file.
+9. In your editor app, from the `app/global/includes/header` directory, open the `_style.scss` header file.
 10. Add a new block `.t-header__menu` to modify buttons with the following `c-button` code block:
 
     ```SCSS
@@ -112,23 +111,23 @@ Now that there is content in the header, we add style to it.
         display: flex;
         justify-content: space-between;
         padding: $v-space $small-h-space;
-    
+
         .c-button {
             display: block;
             min-width: 45px;
             min-height: 45px;
 
-            background-image: url('/images/menu.png');
+            background-image: url('/img/menu.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 25px auto;
         }
     }
     ```
-    
+
     Save and close the file.
 
-10. Repeat Steps 5 - 8 of this Task to add another component called `_cart-count` with the following styles:
+10. Repeat Steps 5 - 8 of this Task to add another component called `cart-count` with the following styles:
 
     ```SCSS
     // Cart Count
@@ -143,7 +142,7 @@ Now that there is content in the header, we add style to it.
         width: 40px; // 2
         height: 40px;
 
-        background: url('/images/cauldron.png') top left no-repeat;
+        background: url('/img/cauldron.png') top left no-repeat;
     }
 
 
@@ -171,7 +170,7 @@ Now that there is content in the header, we add style to it.
     }
     ```
 
-    Remember to add the `_cart-count` component with the `@import 'components/cart-count';` statement to the list of components in the `_components.scss` file.
+    Remember to add the `cart-count` component with the `@import 'components/cart-count/style';` statement to the list of components in the `_components.scss` file.
 
 11. Refresh the Potions page from Step 2 of this Task.
 
