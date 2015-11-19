@@ -13,7 +13,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 
     Now, we change the header HTML. Refresh the page as you work your way through the subsequent steps to see the results.
 
-3. In an editor app, from the `/adaptation/views/includes` folder, open the `_header.js` JavaScript file.
+3. In an editor app, from the `app/global/includes/header` folder, open the `context.js` JavaScript file.
 4. Remove the `title` key and replace it with the following code snippet:
 
     ```javascript
@@ -24,14 +24,14 @@ The Adaptive.js generator created a header view and template for us already. Now
         return $('.header-count span').text();
     }
     ```
-    
-5. Save the `_header.js` file and close it.
 
-    Your `_header.js` file should look like this:
+5. Save the `context.js` file and close it.
 
-    ![Header view final](https://s3.amazonaws.com/uploads.hipchat.com/15359/64553/ECIYK6QTDVSoQGE/Screen%20Shot%202015-03-12%20at%204.42.00%20PM.png)
+    Your `context.js` file should look like this:
 
-6. In the editor app, from the `/adaptation/templates/partials` folder, open the `_header.dust` Dust file in your editor.
+    ![Header view final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/7sijdxb6XVsjVmo/Screen%20Shot%202015-11-18%20at%204.01.24%20PM.png)
+
+6. In the editor app, from the `app/global/includes/header` folder, open the `template.dust` Dust file in your editor.
 7. Replace the whole content of the `<header> ... </header>` section in the Dust file with the following HTML snippet:
 
     ```html
@@ -52,26 +52,26 @@ The Adaptive.js generator created a header view and template for us already. Now
     </div>
     ```
 
-8. Save the `_header.dust` file and close it.
+8. Save the `template.dust` file and close it.
 
-9. In your browser, to inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/), right click with your mouse and the **"Inspect Element"** menu option. 
+9. In your browser, to inspect the logo on the desktop site [Merlin's Potions at http://www.merlinspotion.com/](http://www.merlinspotion.com/), right click with your mouse and the **"Inspect Element"** menu option.
 
     The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
 
-10. In your browser, go to `http://www.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `worksho--adaptive-js-site` project directory `/assets/images` sub-folder.
-11. In your editor, open `_header.dust` again and add an `img` image element for the logo:
+10. In your browser, go to `http://www.merlinspotions.com/img/logo.62e1.png`. Save the logo as `logo.png` in your `workshop--adaptive-js-site` project directory `static/img` sub-folder.
+11. In your editor, open `template.dust` again and add an `img` image element for the logo:
 
     ```html
     <div class="t-header__logo">
         <a href="{logoHref}">
-            <img src="{@getUrl path="images/logo.png" /}" alt="Merlins Potions">
+            <img src="{@getUrl path="img/logo.png" /}" alt="Merlins Potions">
         </a>
     </div>
     ```
-    
-    Save the `_header.dust` header Dust file and close it.
 
-    The `{@getUrl path="images/logo.png" /}` part prepends the bundle URL to the image path during the build process. When you preview the site locally, the logo location will appear as `http://localhost:8080/images/logo.png`.
+    Save the `template.dust` header Dust file and close it.
+
+    The `{@getUrl path="img/logo.png" /}` part prepends the bundle URL to the image path during the build process. When you preview the site locally, the logo location will appear as `http://localhost:8080/img/logo.png`.
 
 12. Refresh the Potions page preview from Step 2 to see the logo.
 13. Stop preview with the command `[control] c` in Terminal.
