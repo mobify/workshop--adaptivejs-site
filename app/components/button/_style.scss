@@ -1,0 +1,18 @@
+// Button
+// ===
+
+.c-button {
+    @extend %button;
+}
+
+
+// Button Themes
+// ---
+
+.c-button.c--brand {
+    border: 0;
+
+    background-color: $brand-color;
+
+    color: white;
+}

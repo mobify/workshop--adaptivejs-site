@@ -11,7 +11,7 @@ With the header done, let's move on to last part of this page, the footer. Start
     * Use `http://www.merlinspotions.com/potions` as the site URL.
 
     Make changes to the footer HTML. As you do, refresh the page to see your changes take effect.
-3. In an editor app, from the `/adaptation/views/includes` folder, open the `_footer.js` JavaScript footer file.
+3. In an editor app, from the `app/global/includes/footer` folder, open the `context.js` JavaScript footer file.
 4. Inside the `context` block, remove the entire `documentationLink` function.
 5. Inside the `context` block, add these functions to select and to return the newsletter sign up and copyright text with the following code snippet:
 
@@ -27,10 +27,10 @@ With the header done, let's move on to last part of this page, the footer. Start
         }
     }
     ```
-    
-    Save the changes to your `_footer.js` file and close it.
 
-6. In your editor app, from the `/adaptation/templates/partials/` folder, open the `_footer.dust` Dust template footer file.
+    Save the changes to your `context.js` file and close it.
+
+6. In your editor app, from the `app/global/includes/footer` folder, open the `template.dust` Dust template footer file.
 7. Remove the contents of the `<footer>...</footer>` block. Add the two new `newsletter` and `copyright` footer elements to the template file:
 
     ```html
@@ -57,9 +57,9 @@ With the header done, let's move on to last part of this page, the footer. Start
     {/footer}
     ```
 
-    Save your changes to the `_footer.dust` template file and close it.
+    Save your changes to the `template.dust` template file and close it.
 
-9. Open the `_footer.js` footer view file from Step 3 again to change the newsletter element.
+9. Open the `context.js` footer view file from Step 3 again to change the newsletter element.
 10. Inside the `newsletter` element function, add the `c-button` and `c--accent` classes to the button just above the return line.
 
     ```javascript
@@ -72,7 +72,7 @@ With the header done, let's move on to last part of this page, the footer. Start
             return $newsletter;
         },
         copyright: function() {
-            return $('copyright');
+            return $('footer table td:nth-child(1)>table tr:nth-child(3)');
         }
     }
     ```
@@ -82,7 +82,7 @@ With the header done, let's move on to last part of this page, the footer. Start
     ```javascript
     context: {
         newsletter: function() {
-            var $newsletter = $('.footer-newsletter');
+            var $newsletter = $('footer table>tbody>tr>td[width="45%"]>div').children();
 
             $newsletter.find('input, button').wrapAll('<div class="c-newsletter"></div>');
             $newsletter.find('button').addClass('c-button c--accent');
@@ -95,8 +95,8 @@ With the header done, let's move on to last part of this page, the footer. Start
     }
     ```
 
-    Save the `_footer.js` footer file again and close it.
-    
+    Save the `context.js` footer file again and close it.
+
     The view file now looks like this:
 
     ```javascript
