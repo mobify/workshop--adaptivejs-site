@@ -2,8 +2,8 @@
 
 Let's style the newsletter component of the footer. In this tutorial, you repeat tasks that you are already familiar with from the header tutorial:
 
-* Add a new component SCSS file to style the footer. 
-* Then add styles to the existing button component. 
+* Add a new component SCSS file to style the footer.
+* Then add styles to the existing button component.
 * Finally, add template-specifc styles for the footer partial.
 
 ##Task
@@ -15,7 +15,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 
    * Use `http://www.merlinspotions.com/potions` as the site URL.
 
-3. In your editor app, in the `/assets/styles/components` folder, create a new `_newsletter.scss` newsletter component SCSS file.
+3. In your editor app, in the `app/components/newsletter` folder, create a new `_style.scss` newsletter component SCSS file.
 4. Add the following style content to your file:
 
     ```SCSS
@@ -34,9 +34,9 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
         }
     }
     ```
-    Save the `_newsletter.scss` newsletter component file and close it.
+    Save the `_style.scss` newsletter component file and close it.
 
-5. In your editor app, from the `/assets/styles/components` folder, open the `_button.scss` file.
+5. In your editor app, from the `app/components/button` folder, open the `_style.scss` file.
 
 6. At the bottom of the file, add the following button accent style:
 
@@ -49,10 +49,10 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
         color: white;
     }
     ```
-    
-    Save the `_button.scss` file and close it.
 
-7. In the editor, in the `/assets/styles/templates/partials` folder, create a new `_footer.scss` file.
+    Save the `_style.scss` file and close it.
+
+7. In the editor, in the `app/global/includes/footer` folder, create a new `_style.scss` file.
 
 8. Add the following style snippet to the new file:
 
@@ -104,19 +104,18 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
         font-size: 12px;
     }
     ```
-    
-    Save the `_footer.scss` file and close it.
 
-9. In the editor, from the `/assets/styles` folder, open the `_templates.scss` file.
+    Save the `_style.scss` file and close it.
+
+9. In the editor, from the `app/global` folder, open the `stylesheet.scss` file.
 10. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
 
     ```SCSS
-    // Partial Templates
-    // -----------------
-    // Like headers, footers
+    // Includes
+    // ---
 
-    @import 'templates/partials/header';
-    @import 'templates/partials/footer';
+    @import 'global/includes/header/style';
+    @import 'global/includes/footer/style';
     ```
     Save the `_templates.scss` file and close it.
 
