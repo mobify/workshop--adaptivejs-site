@@ -3,7 +3,7 @@ define([
     'adaptivejs/router',
     'pages/home/view'
 ],
-function($, Router, Home, Category) {
+function($, Router, Home) {
     var router = new Router();
 
     router
