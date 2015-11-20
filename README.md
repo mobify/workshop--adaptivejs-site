@@ -4,9 +4,9 @@
 
 ###Add Click Handlers to the Homepage `view-script`
 
-1. Launch an editor app. From the `/assets/js/ui/view-scripts` folder, open the `home.js` view script.
+1. Launch an editor app. From the `app/pages/home` folder, open the `ui.js` view script.
 
-    The JavaScript files in this folder run on the page after it is rendered. Any UI functionality for the page is added here.
+    `ui.js` runs on the page after it is rendered. Any UI functionality for the page is added here.
 
 2. In the `homeUI` function, add a click handler for `.js-tab__header`
 
@@ -100,12 +100,12 @@
         return homeUI;
     });
     ```
-    
-    Finally, save the `home.js` view script and close it.
+
+    Finally, save the `ui.js` view script and close it.
 
 6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 7. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
-    
+
     * Use `http://www.merlinspotions.com/` as the site URL.
 
 8. Inspect the tabs in the site preview to test the active classes.

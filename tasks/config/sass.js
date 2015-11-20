@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
     return {
         prod: {
@@ -7,19 +6,23 @@ module.exports = function(grunt) {
                 style: 'compressed',
                 sourcemap: 'none',
                 loadPath: [
-                    './',
-                    'bower_components/'
+                    'app/',
+                    'app/bower_components/'
+                ],
+                require: [
+                    'compass/import-once/activate'
                 ]
             },
-            files: [
-                {
-                    expand: true,
-                    cwd: 'assets/styles',
-                    src: ['*.scss'],
-                    dest: 'build/css',
-                    ext: '.css'
-                }
-            ]
+            files: [{
+                expand: true,
+                cwd: 'app/',
+                src: [
+                    '**/*.scss',
+                    '!bower_components/**/*.scss'
+                ],
+                dest: 'build/css',
+                ext: '.min.css',
+            }],
         },
         dev: {
             options: {
@@ -27,19 +30,23 @@ module.exports = function(grunt) {
                 style: 'expanded',
                 sourcemap: 'auto',
                 loadPath: [
-                    './',
-                    'bower_components/'
+                    'app/',
+                    'app/bower_components/'
+                ],
+                require: [
+                    'compass/import-once/activate'
                 ]
             },
-            files: [
-                {
-                    expand: true,
-                    cwd: 'assets/styles',
-                    src: ['*.scss'],
-                    dest: 'build/css',
-                    ext: '.css'
-                }
-            ]
+            files: [{
+                expand: true,
+                cwd: 'app/',
+                src: [
+                    '**/*.scss',
+                    '!bower_components/**/*.scss'
+                ],
+                dest: 'build/css',
+                ext: '.css',
+            }],
         }
     };
 };
