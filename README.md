@@ -11,7 +11,7 @@
 
     To see the new styles take effect, refresh this page.
 
-3. Launch an editor app. From the `/assets/styles/templates` folder, open the `_home.scss` homepage template file.
+3. Launch an editor app. From the `app/pages/home` folder, open the `_style.scss` homepage template file.
 4. Remove the existing styles for the homepage template. Add this styling for the promo image and for the `t-home__content` block:
 
     ``` SCSS
@@ -45,9 +45,9 @@
     }
     ```
 
-    Save the `_home.scss` template file and close it.
+    Save the `_style.scss` template file and close it.
 
-5. In the editor, in the `assets/styles/components` folder, create a new `_tab.scss` tabs component SCSS file with the following styles:
+5. In the editor, in the `app/components` folder, create a new `tab` directory. Then, within the new directory, create `_style.scss` tabs component SCSS file with the following styles:
 
     ``` SCSS
     // Tab
@@ -128,9 +128,9 @@
     }
     ```
 
-    Save the `_tab.scss` tab component SCSS file and close it.
+    Save the `_style.scss` tab component SCSS file and close it.
 
-6. In your editor, from the `assets/styles` folder, open the `_components.scss` components list file. Import the new tab component at the bottom of the file.
+6. In your editor, from the `app/global/styles` folder, open the `_components.scss` components list file. Import the new tab component at the bottom of the file.
 
     ```SCSS
     // Project Components
@@ -141,10 +141,10 @@
     // eg. @import 'components/button';
 
     ...
-    @import 'components/newsletter';
-    @import 'components/tab';
+    @import 'components/newsletter/style';
+    @import 'components/tab/style';
     ```
-    
+
     Save the `_components.scss` components list file.
 
 7. Refresh the homepage preview from Step 2 in your browser.
