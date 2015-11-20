@@ -21,7 +21,7 @@ The Adaptive.js generator created a header view and template for us already. Now
         return $('.logo a').attr('href');
     },
     cartCount: function() {
-        return $('.header-count span').text();
+        return $('.header-cart span').text();
     }
     ```
 
