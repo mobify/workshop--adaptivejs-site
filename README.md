@@ -117,7 +117,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
     @import 'global/includes/header/style';
     @import 'global/includes/footer/style';
     ```
-    Save the `_templates.scss` file and close it.
+    Save the `stylesheet.scss` file and close it.
 
 11. Refresh the Potions category page from Step 2.
 

@@ -4,6 +4,7 @@
 .t-header {
     display: flex;
     justify-content: space-between;
+    padding: $v-space $h-space;
 }
 
 
@@ -32,7 +33,6 @@
 .t-header__menu {
     display: flex;
     justify-content: space-between;
-    padding: $v-space $small-h-space;
 
     .c-button {
         display: block;
