@@ -152,7 +152,7 @@ Your newly modified view file looks like this:
         }
     }
     ```
-    Save the `_product-list.scss` product list file and close it.
+    Save the `_style.scss` product list file and close it.
 
 7. In your editor app, from the `app/global/styles` folder, open the `_components.scss` component SCSS file. This is where all of the component SCSS files are imported into.
 8. Add the `_product-list` SCSS file to the list of components.
@@ -166,11 +166,11 @@ Your newly modified view file looks like this:
     // eg. @import 'components/button';
 
     @import 'components/card/style';
-    @import 'components/product-list'/style;
+    @import 'components/product-list/style';
     ```
     Save the `_components.scss` component list file and close it.
 
-9. Repeat Steps 5-8 in Task B. In `app/components/price` folder, add a `_price.scss` component file with the following styles:
+9. Repeat Steps 5-8 in Task B. In `app/components/price` folder, add a `_style.scss` component file with the following styles:
 
     ```scss
     // Price
