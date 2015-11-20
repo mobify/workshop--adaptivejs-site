@@ -1,9 +1,12 @@
 define([
     'lib/viewMocker',
-    'views/home',
-    'text!fixtures/home.html'
+    'pages/home/view',
+    'text!fixtures/home.html',
+    'chai'
 ],
-function(test, view, fixture) {
+function(test, view, fixture, chai) {
+    var expect = chai.expect;
+
     /*
      * Example of a test using HTML file fixtures in conjunction with the processed context.
      *
@@ -15,7 +18,8 @@ function(test, view, fixture) {
          */
         'context contains the correct template name': function($, context) {
             var templateName = context.templateName;
-            assert.equal(templateName, 'home', 'home context has correct template name');
+
+            expect(templateName).to.equal('home', 'home context has correct template name');
         },
 
         /*
@@ -23,7 +27,8 @@ function(test, view, fixture) {
          */
         'context.header property contains the title': function($, context) {
             var title = context.header.title;
-            assert.equal(title, 'Home test');
+
+            expect(title).to.equal('Home test');
         }
     });
 
@@ -33,9 +38,9 @@ function(test, view, fixture) {
      */
     test('Home view DOM', view, fixture, {
         'adaptation adds the correct template class': function($) {
-            var $root = $('#x-root');
+            var $body = $('body').last();
 
-            assert.isTrue($root.hasClass('t-home'), 'x-root has class t-home');
+            expect($body.hasClass('t-home')).to.be.true;
         }
     });
 });

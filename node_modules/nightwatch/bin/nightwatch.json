@@ -3,8 +3,10 @@
   "output_folder" : "./examples/reports",
   "custom_commands_path" : "./examples/custom-commands",
   "custom_assertions_path" : "",
-  "globals_path" : "./examples/globals.json",
+  "globals_path" : "",
   "live_output" : false,
+  "parallel_process_delay" : 10,
+  "disable_colors": false,
 
   "selenium" : {
     "start_process" : false,

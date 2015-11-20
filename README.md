@@ -25,7 +25,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
 
     As you work through these instructions and change the homepage view and template files, refresh the mobile preview homepage in your browser.
 
-5. In an editor app, from the `/adaptation/views` folder, open the `home.js` view file.
+5. In an editor app, from the `app/pages/home` folder, open the `view.js` view file.
 6. Inside the `context` block, remove the `firstp` key.
 7. Inside the `context` block, add keys that select and return the hero banner, shipping message, and discount banner from the following code snippet:
 
@@ -43,9 +43,9 @@ Now that you have experience with some of the basics, we work on the homepage. T
         }
     }
     ```
-    Save the `home.js` file and close it.
+    Save the `view.js` file and close it.
 
-8. In the editor, from the `/adaptation/templates` folder, open the `home.dust` Dust template file. 
+8. In the editor, from the `app/pages/home` folder, open the `template.dust` Dust template file.
 9. Inside the content block, add the three elements from this snippet:
 
     ```html
@@ -62,12 +62,12 @@ Now that you have experience with some of the basics, we work on the homepage. T
 
     {/contentBlock}
     ```
-    
-    Save the `home.dust` Dust template and close it.
+
+    Save the `template.dust` Dust template and close it.
 
     Now, we work with the three carousels on the page. We include these three sections as tabs instead of carousels, so we extract information from the carousels to place them in the tabs. We then define new markup for the tabs inside the template.
 
-10. In the editor, from the `/adaptation/views` folder, open the `home.js` view file.
+10. In the editor, from the `app/pages/home` folder, open the `view.js` view file.
 11. Inside the `context` block, add a `categories` key that returns each `.categories .carousel` div with the following code snippet:
 
     ```javascript
@@ -88,10 +88,10 @@ Now that you have experience with some of the basics, we work on the homepage. T
     }
     ```
     Ensure you place the `,` comma character after the `discountBanner` key.
-    
+
     Now, this code simply outputs the full markup for each carousel. Let's break it down even further.
 
-12. In the `home.js` view file, update the `categories` key to return a list of objects that contain the category title and collection of products for the category with the following code snippet:
+12. In the `view.js` view file, update the `categories` key to return a list of objects that contain the category title and collection of products for the category with the following code snippet:
 
     ```javascript
         discountBanner: function() {
@@ -110,9 +110,9 @@ Now that you have experience with some of the basics, we work on the homepage. T
     }
     ```
 
-    Now let's take it one step further: let's change the `products` Zepto collection into a list of objects.
+    Now let's take it one step further: let's change the `products` jQuery collection into a list of objects.
 
-13. In the `home.js` view file, map the `products` collection into a list of objects with each products href, image, title, and price with this code snippet:
+13. In the `view.js` view file, map the `products` collection into a list of objects with each products href, image, title, and price with this code snippet:
 
     ```javascript
         discountBanner: function() {
@@ -142,63 +142,12 @@ Now that you have experience with some of the basics, we work on the homepage. T
     }
     ```
 
-    Finally, save the `home.js` view file and close it. Your file should look like this:
+    Finally, save the `view.js` view file and close it.
 
-    ```javascript
-    define([
-        '$',
-        'views/base',
-        'dust!templates/home'
-    ],
-    function($, BaseView, template) {
-        return {
-            template: template,
-            extend: BaseView,
-            context: {
-                templateName: 'home',
-                hero: function() {
-                    return $('.hero');
-                },
-                shipping: function() {
-                    return $('.free-shipping');
-                },
-                discountBanner: function() {
-                    return $('.banner-message');
-                },
-                categories: function() {
-                    return $('.categories .carousel').map(function() {
-                        var $category = $(this);
-
-                        return {
-                            title: $category.find('h3').text(),
-                            products: $category.find('.jcarousel li a').map(function() {
-                                var $item = $(this);
-                                return {
-                                    href: $item.attr('href'),
-                                    image: $item.find('img'),
-                                    // Find and remove the price before selecting
-                                    // the description to separate the two elements.
-                                    price: $item.find('.price').remove().text(),
-                                    title: $item.find('.description').text().replace(' - ', '')
-                                };
-                            })
-                        };
-                    });
-                }
-            }
-
-            /**
-             * If you wish to override preProcess/postProcess in this view, have a look at the documentation:
-             * https://cloud.mobify.com/docs/adaptivejs/views/
-             */
-        };
-    });
-    ```
-
-14. In the editor, from the `/adaptation/templates` folder, open the `home.dust` Dust template file again.
+14. In the editor, from the `app/pages/home` folder, open the `template.dust` Dust template file again.
 
     With list we built, we arrange the categories and products in tabs.
-    
+
 15. Inside the `contentBlock` block, add the following markup toward the bottom of the block:
 
     ```html
@@ -233,8 +182,8 @@ Now that you have experience with some of the basics, we work on the homepage. T
 
     We use the `{#keyName}{/keyName}` block to loop through items in a list. Read our [Dust.js Cheat Sheet](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet) for more dust templating tricks.
 
-    Save the `home.dust` template file and close it.
-    
+    Save the `template.dust` template file and close it.
+
 16. Refresh the homepage preview from Step 3.
 
 17. Stop the preview with the `[control] c` command in Terminal.
