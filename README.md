@@ -52,7 +52,7 @@ Now that there is content in the header, we add style to it.
 
     We have the header layout set up. Let's add to menu and the cart buttons to fill in this layout.
 
-5. In your editor app, in the `app/components` folder, create a new `button` directory, then `_style.scss` SCSS file within i.
+5. In your editor app, in the `app/components` folder, create a new `button` directory, then `_style.scss` SCSS file within it.
 
 6. Add the following content to the file:
 

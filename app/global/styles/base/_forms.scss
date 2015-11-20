@@ -35,26 +35,25 @@ label {
 
 select,
 textarea,
-[type="text"],
-[type="search"],
-[type="password"],
-[type="tel"],
-[type="url"],
-[type="number"],
-[type="email"] {
+[type='text'],
+[type='search'],
+[type='password'],
+[type='tel'],
+[type='url'],
+[type='number'],
+[type='email'] {
     width: 100%;
     min-height: $tap-size;
     padding: $input-padding;
     border: $border;
 
     border-radius: $border-radius;
-
     background-color: $input-background-color;
 
     line-height: $line-height;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &::-webkit-input-placeholder {
         color: $neutral-50;
@@ -76,7 +75,7 @@ textarea,
 // These properties must be set with a slightly higher specificity for search
 // inputs because Normalize's defaults are a bit too specific
 
-input[type="search"] {
+input[type='search'] {
     box-sizing: border-box;
 
     -webkit-appearance: none;
@@ -91,6 +90,7 @@ input[type="search"] {
 
 select {
     height: $tap-size; // 1
+
     -webkit-appearance: menulist-button; // 1
 }
 
@@ -100,8 +100,8 @@ select {
 //
 // 1. Aligns them with any inline content that follows
 
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
     position: relative;
     top: -2px; // 1
 
@@ -109,15 +109,14 @@ select {
     width: 24px;
     height: 24px;
     margin-right: $unit;
-    border: 1px solid darken($border-color, 0.25);
+    border: 1px solid darken($border-color, .25);
 
     background: $neutral-30 $neutral-gradient;
 
     vertical-align: middle;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
         background: $neutral-40 reverse-gradient($neutral-gradient);
@@ -125,7 +124,7 @@ select {
 
     &:checked {
         background: $neutral-30;
-        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, .1);
 
         &::after {
             content: '';
@@ -137,7 +136,7 @@ select {
     }
 }
 
-[type="radio"] {
+[type='radio'] {
     border-radius: 24px;
 
     &:after {
@@ -151,7 +150,7 @@ select {
     }
 }
 
-[type="checkbox"] {
+[type='checkbox'] {
     &:checked {
         &:after {
             content: '\2714';
@@ -171,18 +170,19 @@ select {
 // ---
 
 button,
-[type="submit"] {
+[type='submit'],
+%button {
     display: block;
     min-height: $tap-size;
     padding: $input-padding;
-    border: 1px solid darken($border-color, 0.25);
+    border: 1px solid darken($border-color, .25);
 
     background: $neutral-30 $neutral-gradient;
 
     line-height: $line-height;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:active {
         background: $neutral-40 reverse-gradient($neutral-gradient);
@@ -199,7 +199,6 @@ button,
 
 [disabled] {
     opacity: 1;
-
     background: $disabled-input-background-color;
 
     color: $disabled-input-color;
@@ -222,7 +221,7 @@ button,
         }
     }
 
-    &[type="radio"]:after {
+    &[type='radio']:after {
         background-color: $disabled-input-color;
     }
 }
