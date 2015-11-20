@@ -81,9 +81,9 @@ Start with the HTML definition for the page in the template file. Then in the vi
     {/contentBlock}
     ```
 
-11. Save the `category.dust` template file and close it.
+11. Save the `template.dust` template file and close it.
 
-    Your `category.dust` file should look like this:
+    Your `template.dust` file should look like this:
 
     ![Category Dust Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/SYM32MCq1YTIPIf/Screen%20Shot%202015-11-09%20at%204.48.41%20PM.png)
 
