@@ -5,7 +5,7 @@ define(['$'], function($) {
                 return $('.logo a').attr('href');
             },
             cartCount: function() {
-                return $('.header-count span').text();
+                return $('.header-cart span').text();
             }
         }
     };
