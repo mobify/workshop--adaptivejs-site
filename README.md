@@ -25,6 +25,7 @@ Now that there is content in the header, we add style to it.
     .t-header {
         display: flex;
         justify-content: space-between;
+        padding: $v-space $h-space;
     }
 
 
@@ -110,7 +111,6 @@ Now that there is content in the header, we add style to it.
     .t-header__menu {
         display: flex;
         justify-content: space-between;
-        padding: $v-space $small-h-space;
 
         .c-button {
             display: block;
