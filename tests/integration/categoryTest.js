@@ -1,21 +1,24 @@
 define([
     'lib/viewMocker',
-    'views/category',
-    'text!fixtures/category.html'
+    'pages/category/view',
+    'text!fixtures/category.html',
+    'chai'
 ],
-function(test, view, fixture) {
+function(test, view, fixture, chai) {
+    var expect = chai.expect;
+
     test('category view context', view, fixture, {
         'context contains the correct template name': function($, context) {
             var templateName = context.templateName;
-            assert.equal(templateName, 'category', 'category context has correct template name');
+            expect(templateName).to.equal('category', 'category context has correct template name');
         }
     });
 
     test('category view DOM', view, fixture, {
         'adaptation adds the correct template class': function($) {
-            var $root = $('#x-root');
+            var $body = $('body').last();
 
-            assert.isTrue($root.hasClass('t-category'), 'x-root has class t-category');
+            expect($body.hasClass('t-category')).to.be.true;
         }
     });
 });
