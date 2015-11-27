@@ -1,6 +1,5 @@
-node_modules
 localSettings.json
-build
+/build
 .sass-cache/
 tmp/
 .idea/
