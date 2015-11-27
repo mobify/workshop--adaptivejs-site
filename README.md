@@ -6,6 +6,13 @@ In addition to generating a new project, the Adaptive.js Generator has a view ge
 * a view-script file, and
 * a view test file.
 
+### Install NPM Modules
+
+1. In your `workshop--adaptivejs-site` project folder, enter the following command to install NPM modules:
+
+    ```
+    npm install
+    ```
 
 ##Task
 
