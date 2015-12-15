@@ -107,7 +107,7 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 
     Save the `_style.scss` file and close it.
 
-9. In the editor, from the `app/global` folder, open the `stylesheet.scss` file.
+9. In the editor, from the `app` folder, open the `stylesheet.scss` file.
 10. Add the `_footer.scss` file to the list of templates. Ensure that you specify the path correctly.
 
     ```SCSS
