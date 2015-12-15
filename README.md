@@ -17,13 +17,11 @@ With the header done, let's move on to last part of this page, the footer. Start
 
     ```javascript
     context: {
-        context: {
-            newsletter: function() {
-                return $('footer table>tbody>tr>td[width="45%"]>div').children();
-            },
-            copyright: function() {
-                return $('footer table td:nth-child(1)>table tr:nth-child(3)');
-            }
+        newsletter: function() {
+            return $('footer table>tbody>tr>td[width="45%"]>div').children();
+        },
+        copyright: function() {
+            return $('footer table td:nth-child(1)>table tr:nth-child(3)');
         }
     }
     ```
