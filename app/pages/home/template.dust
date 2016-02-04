@@ -1,37 +1,11 @@
 {>"global/base"/}
 
 {<contentBlock}
-    {hero}
+    <p>We've also extracted the first paragraph from your site and placed it in the homepage template:</p>
 
-    <div class="c-shipping-banner">
-        {shipping}
-    </div>
-
-    <div class="t-home__promo">
-        {discountBanner}
-    </div>
-
-    <div class="t-home__content">
-        <div class="c-tab">
-            <div class="c-tab__controls">
-                {#categories}
-                    <button class="c-tab__button u-unstyle js-tabs__header">{title}</button>
-                {/categories}
-            </div>
-
-            {#categories}
-                <div class="c-tab__section c-product-list js-tabs__sections">
-                    {#products}
-                        <a href="{href}" class="c-product-list__item">
-                            {image}
-                            <div class="c-tab__description">{title}</div>
-                            <div class="c-price">{price}</div>
-                        </a>
-                    {/products}
-                </div>
-            {/categories}
-        </div>
-    </div>
+    <p class="c-card">
+        {firstp}
+    </p>
 {/contentBlock}
 
 {<uiScripts}
