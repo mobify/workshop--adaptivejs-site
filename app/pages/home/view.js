@@ -13,9 +13,8 @@ function($, baseView, template) {
         extend: baseView,
         context: {
             templateName: 'home',
-                firstp: function() {
-                    return $('p').first().text() || 'Could not find the first paragraph text in your page';
-                }
+            firstp: function() {
+                return $('p').first().text() || 'Could not find the first paragraph text in your page';
             }
         }
 
