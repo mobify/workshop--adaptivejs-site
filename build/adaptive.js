@@ -3563,7 +3563,7 @@ define('json',{load: function(id){throw new Error("Dynamic load not allowed: " +
 
 define("json!package", function(){ return {
     "name": "merlins-potions-workshop",
-    "siteUrl": "www.merlinspotions.com",
+    "siteUrl": "training.merlinspotions.com",
     "version": "0.0.1",
     "dependencies": {
         "adaptivejs": "1.1.4",
