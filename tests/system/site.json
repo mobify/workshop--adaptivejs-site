@@ -3,11 +3,11 @@
     "profiles": {
         "preview": {
             "bundleUrl": "http://localhost:8080/adaptive.js",
-            "siteUrl": "merlinspotions.com"
+            "siteUrl": "training.merlinspotionss.com"
         },
         "production": {
             "bundleUrl": "",
-            "siteUrl": "merlinspotions.com",
+            "siteUrl": "training.merlinspotionss.com",
             "production": true
         }
     }
