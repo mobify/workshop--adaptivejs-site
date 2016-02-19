@@ -1,10 +1,10 @@
 #Adaptive.js Workshop
 
-The example site for this workshop is [Merlin's Potions](http://www.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
+The example site for this workshop is [Merlin's Potions](http://training.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
 
 We use Git to switch between the steps in the workshop. Look through some of [Git's documentation](http://git-scm.com/documentation) if you're not already familiar with Git. Also, we use Require.js in most of the JavaScript files in the project. Its documentation is found [here](http://requirejs.org/docs/start.html).
 
-Follow the installation steps in the **Workshop Pre-requisites** section below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section. 
+Follow the installation steps in the **Workshop Pre-requisites** section below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section.
 
 ##Workshop Pre-requisites
 
@@ -35,7 +35,7 @@ To install the workshop:
 
 ##Ready to Start
 
-Once you install the workshop, you're ready to move on to the next step. 
+Once you install the workshop, you're ready to move on to the next step.
 
 1. In the `workshop--adaptivejs-site` directory, run the following command to proceed to the project set up branch:
 
