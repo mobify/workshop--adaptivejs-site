@@ -57,7 +57,7 @@ In addition to generating a new project, the Adaptive.js Generator has a view ge
 
 9. Back in the command line, enter the `grunt preview` command to start the browser preview.
 10. Work through the [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project) tutorial.
-    Use the `http://www.merlinspotions.com/potions` URL for the site.
+    Use the `http://training.merlinspotions.com/potions` URL for the site.
 
     A page that is similar to the Merlin's Potions homepage appears but with content from the category page included under the header.
 
