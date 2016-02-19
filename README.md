@@ -23,7 +23,7 @@ Ensure that you change the path to reflect your project folder structure.
 
     ![Project Name](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/t2kd0iMRsCNzXLn/Screen%20Shot%202015-11-06%20at%202.00.32%20PM.png)
 
-4. Enter `http://www.merlinspotions.com` for the project URL.
+4. Enter `http://training.merlinspotions.com` for the project URL.
 
     ![Project URL](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/IIPtfXH3ZUagLjD/Screen%20Shot%202015-11-06%20at%202.01.01%20PM.png)
 
