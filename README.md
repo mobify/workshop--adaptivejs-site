@@ -10,7 +10,7 @@ Now that there is content in the header, we add style to it.
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site directory`. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://www.merlinspotions.com/potions` as the site URL.
+    * Use `http://training.merlinspotions.com/potions` as the site URL.
 
 3. In an editor app, from the `app/global/includes/header` directory, open the `_style.scss` header SCSS file.
 
