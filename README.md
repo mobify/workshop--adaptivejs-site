@@ -106,7 +106,7 @@
 6. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 7. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://www.merlinspotions.com/` as the site URL.
+    * Use `http://training.merlinspotions.com/` as the site URL.
 
 8. Inspect the tabs in the site preview to test the active classes.
 
