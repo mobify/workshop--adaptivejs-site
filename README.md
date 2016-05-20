@@ -42,18 +42,18 @@ Ensure that you change the path to reflect your project folder structure.
     ![Vellum](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/zaFSq3F4P5xggjz/Screen%20Shot%202015-11-06%20at%202.01.35%20PM.png)
 
     Vellum is a framework that we created to add default styles to the mobile site adaptation project. More information on Vellum can be found [here](https://github.com/mobify/vellum).
-
-8. Enter `y` to lint your JavaScript files.
-
-    ![Lint JS](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/sxFf3kAuLts0DEU/Screen%20Shot%202015-11-06%20at%202.01.52%20PM.png)
-
-    This steps enables your project JavaScript files to be checked against our [code style guide](https://github.com/mobify/mobify-code-style) every time you preview your build. The style errors in your project are reported in the terminal but do not prevent your site preview.
     
-9. Enter `y` to use the Nightwatch.js testing framework.
+8. Enter `y` to use the Nightwatch.js testing framework.
 
     ![Nightwatch](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/N2RYbhnEpktuhxP/Screen%20Shot%202015-11-06%20at%202.01.44%20PM.png)
 
     Nightwatch.js is an automated testing framework that uses Selenium. We created a fork of the Nightwatch.js resource that we use for our builds. View the Mobify fork of Nightwatch.js in the repository [here](https://github.com/mobify/nightwatch). This installation step adds [Custom Nightwatch.js Commands and Assertions](https://cloud.mobify.com/docs/adaptivejs/testing/custom-nightwatch-api/) that were created specifically to test Mobify sites.
+
+9. Enter `y` to lint your JavaScript files.
+
+    ![Lint JS](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/sxFf3kAuLts0DEU/Screen%20Shot%202015-11-06%20at%202.01.52%20PM.png)
+
+    This steps enables your project JavaScript files to be checked against our [code style guide](https://github.com/mobify/mobify-code-style) every time you preview your build. The style errors in your project are reported in the terminal but do not prevent your site preview.
 
     The install concludes and returns the command line to your `workshop--adaptivejs-site` project folder. A new folder **also** named `workshop--adaptivejs-site` is now in your original project folder.
     This means that your project is now located in a path similar to this one:
