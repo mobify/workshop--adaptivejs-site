@@ -29,7 +29,8 @@ The Adaptive.js generator created a header view and template for us already. Now
 
     Your `context.js` file should look like this:
 
-    ![Header view final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/7sijdxb6XVsjVmo/Screen%20Shot%202015-11-18%20at%204.01.24%20PM.png)
+    ![Header view final](https://cloud.githubusercontent.com/assets/156768/15792486/6534c160-2992-11e6-8d04-f80946b45fce.png)
+    
 
 6. In the editor app, from the `app/global/includes/header` folder, open the `template.dust` Dust file in your editor.
 7. Replace the whole content of the `<header> ... </header>` section in the Dust file with the following HTML snippet:
