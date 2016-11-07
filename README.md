@@ -8,7 +8,7 @@ With the header done, let's move on to last part of this page, the footer. Start
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://training.merlinspotionss.com/potions` as the site URL.
+    * Use `http://training.merlinspotions.com/potions` as the site URL.
 
     Make changes to the footer HTML. As you do, refresh the page to see your changes take effect.
 3. In an editor app, from the `app/global/includes/footer` folder, open the `context.js` JavaScript footer file.
