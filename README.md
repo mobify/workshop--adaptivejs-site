@@ -21,7 +21,7 @@ Now that you have experience with some of the basics, we work on the homepage. T
 3. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 4. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
 
-    * Use `http://training.merlinspotionss.com/` as the site URL.
+    * Use `http://training.merlinspotions.com/` as the site URL.
 
     As you work through these instructions and change the homepage view and template files, refresh the mobile preview homepage in your browser.
 
