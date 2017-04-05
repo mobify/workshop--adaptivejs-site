@@ -1,4 +1,4 @@
-#Adaptive.js Workshop
+# Adaptive.js Workshop
 
 The example site for this workshop is [Merlin's Potions](http://training.merlinspotions.com), a mock e-commerce site that peddles potions and spell books.
 
@@ -6,7 +6,7 @@ We use Git to switch between the steps in the workshop. Look through some of [Gi
 
 Follow the installation steps in the **Workshop Pre-requisites** section below to get your computer ready for the workshop. Once you're done, follow the directions in the **Ready to Start** section.
 
-##Workshop Pre-requisites
+## Workshop Pre-requisites
 
 To run this workshop, install all the prerequisites. Follow steps in the [Install the Adaptive.js SDK](http://adaptivejs.mobify.com/v2.0/docs/install/) tutorial to install everything correctly.
 
@@ -33,7 +33,7 @@ To install the workshop:
     ```
 
 
-##Ready to Start
+## Ready to Start
 
 Once you install the workshop, you're ready to move on to the next step.
 
