@@ -1,4 +1,4 @@
-#Step 1: Generate a View
+# Step 1: Generate a View
 
 In addition to generating a new project, the Adaptive.js Generator has a view generator that sets up a new view for your project. The view generator creates:
 * a view file,
@@ -6,7 +6,7 @@ In addition to generating a new project, the Adaptive.js Generator has a view ge
 * a view-script file, and
 * a view test file.
 
-### Install NPM Modules
+## Install NPM Modules
 
 1. In your `workshop--adaptivejs-site` project folder, enter the following command to install NPM modules:
 
@@ -14,9 +14,9 @@ In addition to generating a new project, the Adaptive.js Generator has a view ge
     npm install
     ```
 
-##Task
+## Task
 
-###Create a New 'category' View
+### Create a New 'category' View
 
 1. In your `workshop--adaptivejs-site` project folder, enter the following command to run the sub-generator with Yeoman:
 
@@ -63,7 +63,7 @@ In addition to generating a new project, the Adaptive.js Generator has a view ge
 
 11. To stop the preview, enter `[control] c` on the command line.
 
-##Continue to Step 2
+## Continue to Step 2
 
 When you're ready to continue to Step 2, run the following command:
 
