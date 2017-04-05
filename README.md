@@ -1,8 +1,8 @@
-#Set Up the Project
+# Set Up the Project
 
-One of the tools that you installed previously was the Adaptive.js Generator. Set up the folder structure for a new project with this generator.
+One of the tools that you installed previously was the Adaptive.js Generator. We will now set up the folder structure for a new project using this generator.
 
-##Create a New Project with the Adaptive.js Generator
+## Create a New Project with the Adaptive.js Generator
 
 Ensure that you have the terminal open to the workshop `workshop--adaptivejs-site` folder.
 If you closed your terminal, launch the Terminal app again change directories the workshop folder with the command:
@@ -31,17 +31,17 @@ Ensure that you change the path to reflect your project folder structure.
 
     ![jQuery or Zepto](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/xitBpliuyR1MEpH/Screen%20Shot%202015-11-06%20at%202.01.25%20PM.png)
 
-6. Enter `y` to use Dust templating.
-
-    ![Dust Templating](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/xitBpliuyR1MEpH/Screen%20Shot%202015-11-06%20at%202.01.25%20PM.png)
-
-    We use Dust templating to build the HTML structure of our pages. Learn more about Dust templating in our [Dust.js Cheat Sheet](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/).
-
-7. Enter `y` to use the Mobify Vellum framework.
+6. Enter `y` to use the Mobify Vellum framework.
 
     ![Vellum](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/zaFSq3F4P5xggjz/Screen%20Shot%202015-11-06%20at%202.01.35%20PM.png)
 
     Vellum is a framework that we created to add default styles to the mobile site adaptation project. More information on Vellum can be found [here](https://github.com/mobify/vellum).
+    
+7. Enter `y` to use Dust templating.
+
+    ![Dust Templating](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/xitBpliuyR1MEpH/Screen%20Shot%202015-11-06%20at%202.01.25%20PM.png)
+
+    We use Dust templating to build the HTML structure of our pages. Learn more about Dust templating in our [Dust.js Cheat Sheet](https://cloud.mobify.com/docs/adaptivejs/adapting/dustjs-cheat-sheet/).
     
 8. Enter `y` to use the Nightwatch.js testing framework.
 
@@ -112,7 +112,7 @@ Test your directory with the command `pwd`. It should look something like:
 
 We now change the folder structure to eliminate the additional `workshop--adaptivejs-site` folder inside this root folder.
 
-##Ready to Start
+## Ready to Start
 
 1. Enter following command on the command line in Terminal:
 
@@ -130,7 +130,7 @@ We now change the folder structure to eliminate the additional `workshop--adapti
 
 3. Then, follow the directions in the  [README](https://github.com/mobify/workshop--adaptivejs-site/blob/step-1-generate-view/README.md) of the Step 1 branch.
 
-##Additional Information
+## Additional Information
 
 The generator that we used to create the project also has a default setting, which automatically chooses the same settings that we used above. In the future you can generate projects using the defaults by typing:
 
