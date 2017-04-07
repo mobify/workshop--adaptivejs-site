@@ -1,10 +1,10 @@
-#Step 3: Style the Category Page
+# Step 3: Style the Category Page
 
 The CSS naming convention we use is a modified version of BEM. We call it "CSM" (Component, Sub-component, Modifier). For more information on CSM and on all of our CSS best practices, read the CSS section of our [Mobify code style project](https://github.com/mobify/mobify-code-style/tree/master/css).
 
 To follow our best practices, we often add classes to the desktop HTML and we change the markup for elements. This step covers a few examples of our best practices. We also show you how to add the SCSS to style this page.
 
-##Task A
+## Task A
 
 ### Update the Template HTML
 
@@ -82,7 +82,7 @@ Your newly modified view file looks like this:
 
 ![Update listing element](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/W1qZKUrs09DL9rb/Screen%20Shot%202015-11-12%20at%201.41.52%20PM.png)
 
-##Task B
+## Task B
 
 ### Add SCSS Files for the Template and Components
 
@@ -192,7 +192,7 @@ Your newly modified view file looks like this:
 
 11. Stop preview with the command `[control] c` on the command line in the Terminal.
 
-##Continue to Step 4
+## Continue to Step 4
 
 Once the page looks good and you're ready to move on, run the following command:
 
