@@ -1,10 +1,10 @@
-#Step 2: Populate the Category View with Content
+# Step 2: Populate the Category View with Content
 
 Now that the new view works, let's add content to it. Currently the contents of the body tag for the desktop page are included on the page but we don't need all of the original contents for the adapted site.
 
-##Task
+## Task
 
-###Add Content to the Category View
+### Add Content to the Category View
 
 There are two main elements to pull into our view:
 
@@ -94,7 +94,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 13. Stop the preview with the `[control] c` command on the command line.
 
-##Continue to Step 3
+## Continue to Step 3
 
 Once you set up the category view, add some styling to it. Run the following command to move on:
 
