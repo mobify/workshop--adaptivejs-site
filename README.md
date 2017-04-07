@@ -1,8 +1,8 @@
-#Step 10: Style the Homepage
+# Step 10: Style the Homepage
 
-##Task
+## Task
 
-###Style the Homepage
+### Style the Homepage
 
 1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
