@@ -1,4 +1,4 @@
-#Step 7: Style the Footer
+# Step 7: Style the Footer
 
 Let's style the newsletter component of the footer. In this tutorial, you repeat tasks that you are already familiar with from the header tutorial:
 
@@ -6,9 +6,9 @@ Let's style the newsletter component of the footer. In this tutorial, you repeat
 * Then add styles to the existing button component.
 * Finally, add template-specifc styles for the footer partial.
 
-##Task
+## Task
 
-###Style the Footer
+### Style the Footer
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
