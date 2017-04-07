@@ -1,10 +1,10 @@
-#Step 5: Style the Header
+# Step 5: Style the Header
 
 Now that there is content in the header, we add style to it.
 
-##Task
+## Task
 
-###Style the Header
+### Style the Header
 
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site directory`. On the command line, enter the `grunt preview` command to start the preview.
