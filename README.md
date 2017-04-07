@@ -1,8 +1,8 @@
-#Step 9: Implement Tab Behavior on the Home Page
+# Step 9: Implement Tab Behavior on the Home Page
 
-##Task
+## Task
 
-###Add Click Handlers to the Homepage `view-script`
+### Add Click Handlers to the Homepage `view-script`
 
 1. Launch an editor app. From the `app/pages/home` folder, open the `ui.js` view script.
 
