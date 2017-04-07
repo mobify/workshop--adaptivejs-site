@@ -1,9 +1,10 @@
-#Step 6: Update the Footer
+# Step 6: Update the Footer
 
 With the header done, let's move on to last part of this page, the footer. Start to add content to the template and to make a few adjustments to the markup. This prepares the files for Step 7, where you style the footer.
-##Task
 
-###Add Content to the Footer
+## Task
+
+### Add Content to the Footer
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
