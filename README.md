@@ -1,10 +1,10 @@
-#Step 4: Update the Header
+# Step 4: Update the Header
 
 The Adaptive.js generator created a header view and template for us already. Now, we add some of the Merlin's Potions site content to the header.
 
-##Task
+## Task
 
-###Add Content to the Header
+### Add Content to the Header
 
 1. In Terminal, ensure you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
 2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
