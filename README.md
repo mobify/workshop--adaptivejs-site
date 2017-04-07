@@ -1,10 +1,10 @@
-#Step 8: Update the Homepage
+# Step 8: Update the Homepage
 
 Now that you have experience with some of the basics, we work on the homepage. To start, we add the content we want to the page.
 
-##Task
+## Task
 
-###Update the Homepage
+### Update the Homepage
 
 1. In your browser, in a new tab, view the desktop version of the [Merlin's Potions homepage](http://training.merlinspotions.com).
 2. To inspect the HTML for the page, right click in the browser and select the **"Inspect Element"** menu option.
