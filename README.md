@@ -62,7 +62,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v2.0/docs/the-mobify-bundle#d-templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view.
 
-9. In the `template.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`.
+9. In the `template.dust` template file, erase the contents of the `contentBlock` key to override it from its default in `base.dust`.
 
     ![Override the contentBlock](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/6BYtC9nwzY6oa3R/Screen%20Shot%202015-11-09%20at%204.42.39%20PM.png)
 
