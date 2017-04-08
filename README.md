@@ -57,7 +57,7 @@ The Adaptive.js generator created a header view and template for us already. Now
 
 9. In your browser, to inspect the logo on the desktop site [Merlin's Potions at http://training.merlinspotion.com/](http://training.merlinspotion.com/), right click with your mouse and the **"Inspect Element"** menu option.
 
-    The logo is included as a background image. However, this approach does not work for our build because we do not include the desktop CSS on our adapted page. Instead, we add a copy of the logo to the project.
+    The logo is included as a background image through the desktop CSS. However, this approach does not work for the mobile build because we do not include the desktop CSS on our adapted page. Instead, we'll have to add a copy of the logo to the project.
 
 10. In your browser, go to `http://training.merlinspotions.com/img/logo.png`. Save the logo as `logo.png` in your `workshop--adaptive-js-site` project directory `static/img` sub-folder.
 11. In your editor, open `template.dust` again and add an `img` image element for the logo:
