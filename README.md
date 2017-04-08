@@ -68,7 +68,7 @@ Another way to change the output HTML is to modify the elements that the view re
     $listing.children().addClass('c-product-list__item').removeAttr('style');
     ```
 
-6. Add the `c-price` class to the `.price` div. The `c-price` class name is another self-contained component.
+6. Add the `c-price` class to the `.price` span. The `c-price` class name is another self-contained component.
 
     ```javascript
     $listing.find('.price').addClass('c-price');
