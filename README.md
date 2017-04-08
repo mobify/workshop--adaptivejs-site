@@ -170,7 +170,7 @@ Your newly modified view file looks like this:
     ```
     Save the `_components.scss` component list file and close it.
 
-9. Repeat Steps 5-8 in Task B. In `app/components/price` folder, add a `_style.scss` component file with the following styles:
+9. Repeat Steps 5-8 in Task B (this time creating a new folder called `price` in `app/components`), then in the `app/components/price` folder, add a `_style.scss` component style file with the following rules:
 
     ```scss
     // Price
