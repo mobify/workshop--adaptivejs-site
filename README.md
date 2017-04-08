@@ -48,7 +48,7 @@ Another way to change the output HTML is to modify the elements that the view re
 
     The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](http://docs.mobify.com/v1.0/docs/views/#c-view-postprocess) guide.
 
-3. Inside the `postProcess` function, at the top of the function, store the `context.listing` object in a `context` variable.
+3. Inside the `postProcess` function, at the top of the function, store the `context` object (which includes a property called `listing`) in the local `context` variable.
 
     ```javascript
     context = BaseView.postProcess(context);
