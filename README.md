@@ -19,7 +19,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
     grunt preview
     ```
 
-2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
+2. [Preview your Project](http://adaptivejs.mobify.com/v2.0/docs/preview-your-project).
 
     Use `http://training.merlinspotions.com/potions` as the site URL.
 
@@ -27,7 +27,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 3. Launch an editor app. In the `app/pages/category` folder, open the `view.js` category view file.
 
-    As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v1.0/docs/the-mobify-bundle#c-views) guide, the view file is where you select and transform content from the original page.
+    As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v2.0/docs/the-mobify-bundle#c-views) guide, the view file is where you select and transform content from the original page.
 
 4. In the `context` section of the file, remove the `body` key.
 5. In `context` object of the view file, add the `title` key with the following code snippet:
@@ -60,7 +60,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
 8. In the editor, from the `app/pages/category` folder, and open the `template.dust` template file.
 
-    As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v1.0/docs/the-mobify-bundle#d-templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view.
+    As you remember from the [Overview of the Mobify Bundle](http://adaptivejs.mobify.com/v2.0/docs/the-mobify-bundle#d-templates), the template file defines the layout of your page on mobile. Each template uses the content from its corresponding view.
 
 9. In the `template.dust` template file, erase the contes of the `contentBlock` key to override it from its default in `base.dust`.
 
@@ -87,7 +87,7 @@ Start with the HTML definition for the page in the template file. Then in the vi
 
     ![Category Dust Final](https://s3.amazonaws.com/uploads.hipchat.com/15359/58442/SYM32MCq1YTIPIf/Screen%20Shot%202015-11-09%20at%204.48.41%20PM.png)
 
-12. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project).
+12. [Preview your Project](http://adaptivejs.mobify.com/v2.0/docs/preview-your-project).
     * use the `http://training.merlinspotions.com/potions` URL for the category product listing page.
 
     A page similar to the one in the previous step appears but now only with the title and listing as contents.
