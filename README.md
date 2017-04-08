@@ -155,7 +155,7 @@ Your newly modified view file looks like this:
     Save the `_style.scss` product list file and close it.
 
 7. In your editor app, from the `app/global/styles` folder, open the `_components.scss` component SCSS file. This is where all of the component SCSS files are imported into.
-8. Add the `_product-list` SCSS file to the list of components.
+8. Add the `product-list` component style (SCSS) file to the list of imported components.
 
     ```scss
     // Project Components
@@ -182,7 +182,7 @@ Your newly modified view file looks like this:
         font-weight: bold;
     }
     ```
-**Remember** to add the `_price` file to the list of compontent to the component list in `app/global/styles/_components.scss`. Save both your files in the editor when you are done.
+**Remember** to add the `price` component style file to the list of imorted components in `app/global/styles/_components.scss`. Save both your files in the editor when you are done.
 
 10. In your browser, view the potions category page. Refresh the page from Step 2 in Task A in this README.
 
