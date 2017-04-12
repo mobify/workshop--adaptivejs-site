@@ -11,7 +11,7 @@ To follow our best practices, we often add classes to the desktop HTML and we ch
 There are a few different ways to affect HTML that the template outputs. The first way is to modify the template file iteself.
 
 1. In Terminal, ensure that you are in the `workshop--adaptivejs-site` directory. On the command line, enter the `grunt preview` command to start the preview.
-2. [Preview your Project](http://adaptivejs.mobify.com/v1.0/docs/preview-your-project) .
+2. [Preview your Project](http://adaptivejs.mobify.com/v2.0/docs/preview-your-project) .
 
     Use `http://training.merlinspotions.com/potions` as the site URL.
 
@@ -46,7 +46,7 @@ Another way to change the output HTML is to modify the elements that the view re
         context: {
     ```
 
-    The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](http://docs.mobify.com/v1.0/docs/views/#c-view-postprocess) guide.
+    The `postProcess` function executes after all the elements for the view are selected, so we can grab one of those elements and make a few changes to it. The base view contains its own `postProcess` function that makes a few global changes. In order to keep these changes, call the `postProcess` for the base. More information on the `postProcess` function can be found in the [Views](http://adaptivejs.mobify.com/v2.0/docs/views/#c-view-postprocess) guide.
 
 3. Inside the `postProcess` function, at the top of the function, store the `context` object (which includes a property called `listing`) in the local `context` variable.
 
